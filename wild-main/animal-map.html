@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wild Life Seasonal Tracker | Sighting Map</title><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="animal-map">
+  <header class="site-header"></header>
+  <main class="page-main">
+    <section class="page-title reveal"><p class="eyebrow">Google Maps</p><h1 id="mapTitle">Wildlife Sighting Map</h1><p id="mapSubtitle">Your recorded animal sighting locations.</p></section>
+    <section class="section">
+      <div class="real-map-shell reveal" id="googleMapShell">
+        <div class="map-frame-area">
+          <iframe class="google-map" id="googleMapFrame" title="Google map of Periyar Tiger Reserve" src="https://www.google.com/maps?q=Periyar%20Tiger%20Reserve%2C%20Thekkady%2C%20Kerala%2C%20India&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-pin-layer" id="mapPinLayer" aria-label="Animal sighting pins"></div>
+        </div>
+        <aside class="map-location-panel">
+          <p class="eyebrow">Observation Locations</p>
+          <div class="map-location-list" id="mapLocationList"></div>
+          <a class="btn btn-primary" id="mapExternalLink" href="https://www.google.com/maps/search/?api=1&query=Periyar%20Tiger%20Reserve%2C%20Thekkady%2C%20Kerala%2C%20India" target="_blank" rel="noopener">Open in Google Maps</a>
+        </aside>
+      </div>
+      <div class="stat-grid map-stats" id="mapStats"></div>
+      <div class="journey reveal" id="mapJourney"></div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+.git
+.git/**
+backend/data
+backend/target
+discord-music-bot
+discord-music-bot/**
+*.mv.db
+*.trace.db

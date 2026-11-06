@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Wildlife Tracker: Run Locally",
+			"type": "shell",
+			"command": "C:\\Windows\\System32\\cmd.exe",
+			"args": [
+				"/c",
+				"cd /d \"C:\\Users\\TheoORCA\\Downloads\\wild-main\\wild-main\\backend\" && \"C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.10.0\\bin\\mvn.cmd\" spring-boot:run"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

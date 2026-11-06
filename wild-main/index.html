@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wild Life Seasonal Tracker | Home</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="nav-shell">
+      <a class="logo" href="index.html"><span>🐾</span> Wild Life Seasonal Tracker</a>
+      <button class="menu-toggle" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="wildlife.html" data-nav="wildlife">Wildlife</a>
+        <a href="places.html" data-nav="places">Places</a>
+        <a href="seasons.html" data-nav="seasons">Seasons</a>
+        <a href="identifier.html" data-nav="identifier">Identifier</a>
+        <a href="my-wildlife.html" data-nav="my-wildlife">My Wildlife</a>
+        <a href="insights.html" data-nav="insights">Insights</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><span class="theme-icon">☾</span></button>
+        <a class="btn btn-primary nav-cta" href="encounter.html">+ Record Encounter</a>
+      </div>
+      <div class="account-menu">
+        <button class="account-button" type="button" aria-label="Open account menu" aria-expanded="false"><span></span></button>
+        <div class="account-panel">
+          <strong id="accountName">Guest</strong>
+          <p id="accountEmail">No email</p>
+          <div class="account-auth-actions">
+            <button class="btn btn-light auth-trigger" type="button" data-auth-mode="login">Login</button>
+            <button class="btn btn-primary auth-trigger" type="button" data-auth-mode="register">Register</button>
+          </div>
+          <button class="btn btn-light auth-logout" type="button">Logout</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero home-hero reveal" style="--hero:url('https://images.unsplash.com/photo-1484406566174-9da000fda645?auto=format&fit=crop&w=1800&q=85')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Field notes for the wild-hearted</p>
+        <h1>Explore. Observe. Remember.</h1>
+        <p>Discover wildlife, record your encounters, and explore your observation journey.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary hero-btn hero-btn-primary" href="wildlife.html">Explore Wildlife</a>
+          <a class="btn btn-ghost hero-btn hero-btn-secondary" href="encounter.html">Record Encounter</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dashboard-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Today in the reserve</p>
+        <h2>Observation Dashboard</h2>
+      </div>
+      <div class="stat-grid" id="homeStats"></div>
+    </section>
+
+    <section class="section split-section">
+      <article class="encounter-feature reveal">
+        <img id="recentEncounterImage" src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=900&q=80" alt="Asian Elephant">
+        <div>
+          <p class="eyebrow">Recent Encounter</p>
+          <h2 id="recentEncounterAnimal">No observations yet</h2>
+          <p id="recentEncounterLocation">Sign in and record your first wildlife encounter.</p>
+          <div class="meta-line"><span id="recentEncounterDate"></span><span id="recentEncounterTime"></span><span id="recentEncounterSeason"></span></div>
+          <a class="btn btn-primary" id="recentEncounterLink" href="encounter.html">Record Encounter</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Featured Wildlife</p>
+        <h2>Guides Worth Opening</h2>
+      </div>
+      <div class="card-grid animals-featured" id="featuredAnimals"></div>
+    </section>
+
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

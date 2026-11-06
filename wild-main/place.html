@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wild Life Seasonal Tracker | Place Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="place">
+  <header class="site-header"></header>
+  <main>
+    <section class="hero compact-hero reveal" id="placeHero" style="--hero:url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1800&q=80')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Place Guide</p>
+        <h1 id="placeName">Periyar</h1>
+        <p id="placeSubtitle">A rich habitat for some of India's most iconic wildlife.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="info-grid">
+        <article class="info-card reveal"><h3>Habitat</h3><p id="placeHabitat">Evergreen forest, lake edges, and damp grassland.</p></article>
+        <article class="info-card reveal"><h3>Common Wildlife</h3><p id="placeCommonWildlife">Asian Elephant, Sambar Deer, Indian Gaur, Great Hornbill.</p></article>
+        <article class="info-card reveal"><h3>Best Season</h3><p id="placeBestSeason">Monsoon</p></article>
+        <article class="info-card reveal"><h3>Recorded Encounters</h3><p id="placeEncounters">39 observations</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Explore the Location</p>
+        <h2 id="placeMapTitle">Map</h2>
+      </div>
+      <div class="real-map-shell reveal">
+        <div class="map-frame-area">
+          <iframe class="google-map" id="placeMapFrame" title="Map of Periyar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <aside class="map-location-panel">
+          <p id="placeMapAddress">Find this wildlife location on the map.</p>
+          <a class="btn btn-primary" id="placeMapLink" href="https://www.google.com/maps/search/?api=1&amp;query=Periyar%20Tiger%20Reserve%2C%20Thekkady%2C%20Kerala%2C%20India" target="_blank" rel="noopener">Open in Google Maps</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="medal-grid" id="placeMedals">
+        <article class="medal-card reveal"><span>🥇</span><p>Most Frequently Observed</p><h3>Asian Elephant</h3><strong>12 sightings</strong></article>
+        <article class="medal-card reveal"><span>🥈</span><p>Second Most Observed</p><h3>Sambar Deer</h3><strong>8 sightings</strong></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Wildlife Found Here</p>
+        <h2 id="placeSpeciesTitle">Periyar Species</h2>
+      </div>
+      <div class="card-grid wildlife-grid" id="placeAnimals"></div>
+    </section>
+
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

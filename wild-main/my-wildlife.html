@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wild Life Seasonal Tracker | My Wildlife</title><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="my-wildlife">
+  <header class="site-header"></header>
+  <main class="page-main">
+    <section class="page-title reveal"><p class="eyebrow">Personal Log</p><h1>My Wildlife</h1><p>Only your recordings appear here. All encounters remain available in shared wildlife views.</p></section>
+    <section class="section"><div class="stat-grid" id="myWildlifeStats"><article class="stat-card reveal"><strong>0</strong><span>Total Encounters</span></article><article class="stat-card reveal"><strong>0</strong><span>Animals</span></article><article class="stat-card reveal"><strong>0</strong><span>Locations</span></article><article class="stat-card reveal"><strong>0</strong><span>Seasons</span></article></div></section>
+    <section class="section">
+      <div class="filters-panel reveal">
+        <input id="encounterSearch" type="search" placeholder="Search encounters...">
+        <select id="animalFilter"><option value="">All animals</option></select>
+        <select id="locationFilter"><option value="">All locations</option></select>
+        <select id="seasonFilter"><option value="">All seasons</option><option>Spring</option><option>Summer</option><option>Monsoon</option><option>Winter</option></select>
+        <input id="dateFilter" type="date">
+      </div>
+      <div class="encounter-grid" id="encounterGrid"></div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

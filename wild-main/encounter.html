@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wild Life Seasonal Tracker | Record Encounter</title><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="encounter">
+  <header class="site-header"></header>
+  <main class="page-main">
+    <section class="page-title reveal"><p class="eyebrow">Field Journal</p><h1>Record an Encounter</h1><p>Capture a moment from the wild.</p></section>
+    <section class="section form-shell reveal">
+      <form id="encounterForm">
+        <div class="form-grid">
+          <label>What did you see?<select id="recordAnimal"><option>Asian Elephant</option><option>Sambar Deer</option><option>Bengal Tiger</option><option>King Cobra</option></select></label>
+          <label>Where did you see it?<select id="recordLocation"><option>Periyar</option><option>Wayanad</option><option>Silent Valley</option><option>Eravikulam</option></select></label>
+          <label>Number of animals<input id="recordCount" type="number" min="1" max="10000" value="1" required></label>
+          <label>Date<input id="recordDate" type="date"></label>
+          <label class="time-field">Time
+            <div class="fancy-time">
+              <span class="time-icon">☀</span>
+              <input id="recordTime" type="time">
+              <span class="time-period" id="timePeriod">PM</span>
+            </div>
+            <div class="time-presets" aria-label="Quick time presets">
+              <button type="button" data-time="06:00">Dawn</button>
+              <button type="button" data-time="12:00">Noon</button>
+              <button type="button" data-time="18:30">Dusk</button>
+              <button type="button" data-time="21:00">Night</button>
+            </div>
+          </label>
+          <label>Season<select id="recordSeason"><option>Spring</option><option>Summer</option><option>Monsoon</option><option>Winter</option></select></label>
+          <label class="full-width">Observation notes<textarea id="recordNotes" rows="3" maxlength="2000" placeholder="What did you observe? (optional)"></textarea></label>
+        </div>
+        <div class="suggestion-panel" id="recordSuggestions"></div>
+    <div class="warning-card" id="sensitiveWarning">⚠️ <strong>Conservation-sensitive observation</strong><p>The record will show the protected area only. Do not publish precise locations for sensitive wildlife.</p></div>
+        <button class="btn btn-primary" type="submit">Record Encounter</button>
+        <p class="auth-message" id="encounterMessage" aria-live="polite"></p>
+      </form>
+    </section>
+    <div class="modal" id="successModal"><div class="modal-card"><button class="modal-close" aria-label="Close modal">×</button><div class="success-icon">✓</div><h2>Encounter Recorded</h2><p>Your wildlife observation has been added.</p></div></div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

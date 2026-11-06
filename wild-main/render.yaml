@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: wildlife-tracker
+    runtime: docker
+    region: singapore
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/animals
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: postgres
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_URL
+        sync: false

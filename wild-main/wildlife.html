@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wild Life Seasonal Tracker | Wildlife</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="wildlife">
+  <header class="site-header"></header>
+  <main class="page-main">
+    <section class="page-title reveal">
+      <p class="eyebrow">Encyclopedia</p>
+      <h1>Wildlife Encyclopedia</h1>
+      <p>Explore community wildlife posts from all users, then visit each animal guide.</p>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Community</p>
+        <h2>Wildlife Posts</h2>
+        <p>Every recorded encounter, with its animal guide and the user who posted it.</p>
+      </div>
+      <div class="encounter-grid" id="communityEncounterGrid" aria-live="polite"></div>
+    </section>
+    <section class="section">
+      <div class="toolbar reveal">
+        <input class="search-input" id="wildlifeSearch" type="search" placeholder="Search wildlife...">
+        <div class="filter-row" id="categoryFilters">
+          <button class="chip active" data-category="All">All</button>
+          <button class="chip" data-category="Mammal">Mammals</button>
+          <button class="chip" data-category="Bird">Birds</button>
+          <button class="chip" data-category="Reptile">Reptiles</button>
+          <button class="chip" data-category="Amphibian">Amphibians</button>
+        </div>
+      </div>
+      <div class="card-grid wildlife-grid" id="wildlifeGrid"></div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
